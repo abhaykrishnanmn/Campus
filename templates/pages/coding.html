@@ -1,0 +1,156 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aptitude Test</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="coding.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  /*min-width: 160px;*/
+  overflow: auto;
+  width: 500px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+  
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+</head>
+<body>
+	<h1 class="h1">Coding Questions</h1>
+	
+	<form>
+		<h2>Coding Questions</h2>
+<p>C Program to Check Whether a Number is Prime or Not</p>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <P><pre>
+        #include <stdio.h>
+
+        int main() {
+        
+          int n, i, flag = 0;
+          printf("Enter a positive integer: ");
+          scanf("%d", &n);
+        
+          // 0 and 1 are not prime numbers
+          // change flag to 1 for non-prime number
+          if (n == 0 || n == 1)
+            flag = 1;
+        
+          for (i = 2; i <= n / 2; ++i) {
+        
+            // if n is divisible by i, then n is not prime
+            // change flag to 1 for non-prime number
+            if (n % i == 0) {
+              flag = 1;
+              break;
+            }
+          }
+        
+          // flag is 0 for prime numbers
+          if (flag == 0)
+            printf("%d is a prime number.", n);
+          else
+            printf("%d is not a prime number.", n);
+        
+          return 0;
+        }
+    </pre>
+    </P>
+  </div>
+</div>
+<p>Java Program to check if the number is a Palindrome</p>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <P><pre>
+        class PalindromeExample{  
+            public static void main(String args[]){  
+             int r,sum=0,temp;    
+             int n=454;//It is the number variable to be checked for palindrome  
+             
+             temp=n;    
+             while(n>0){    
+              r=n%10;  //getting remainder  
+              sum=(sum*10)+r;    
+              n=n/10;    
+             }    
+             if(temp==sum)    
+              System.out.println("palindrome number ");    
+             else    
+              System.out.println("not palindrome");    
+           }  
+           }  
+    </pre>
+    </P>
+  </div>
+</div>
+
+	</form>
+    
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+</body>
+</html>
+
+
+
+

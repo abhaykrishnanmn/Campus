@@ -1,0 +1,92 @@
+{% extends "../pages/base.html" %}
+{% load static %}
+{% block title %}
+Home
+{% endblock title %}
+{% block head %}
+<link rel="stylesheet" href="/static/test.css">
+{% endblock head %}
+{% block body %}
+	<h1 class="h1">Aptitude Test</h1>
+	
+	<form>
+		<div class="question">
+			<p>What does HTML stand for?</p>
+			<div class="options">
+				<label><input type="radio" name="q1" value="a"> Hyperlinks and Text Markup Language</label><br>
+				<label><input type="radio" name="q1" value="b"> Home Tool Markup Language</label><br>
+				<label><input type="radio" name="q1" value="c"> Hyper Text Markup Language</label><br>
+				<label><input type="radio" name="q1" value="d"> None of the above</label>
+			</div>
+		</div>
+		
+		<div class="question">
+			<p>What is the correct HTML tag for a line break?</p>
+			<div class="options">
+				<label><input type="radio" name="q2" value="a"> &lt;br&gt;</label><br>
+				<label><input type="radio" name="q2" value="b"> &lt;lb&gt;</label><br>
+				<label><input type="radio" name="q2" value="c"> &lt;break&gt;</label><br>
+				<label><input type="radio" name="q2" value="d"> None of the above</label>
+			</div>
+		</div>
+        <div class="question">
+			<p>A train 125 m long passes a man, running at 5 km/hr in the same direction in which the train is going, in 10 seconds. The speed of the train is:</p>
+			<div class="options">
+				<label><input type="radio" name="q2" value="a"> &lt;45 km/hr&gt;</label><br>
+				<label><input type="radio" name="q2" value="b"> &lt;50 km/hr&gt;</label><br>
+				<label><input type="radio" name="q2" value="c"> &lt;54 km/hr&gt;</label><br>
+				<label><input type="radio" name="q2" value="d"> 55 km/hr</label>
+			</div>
+		</div>
+        <div class="question">
+			<p>How much time will it take for an amount of Rs. 450 to yield Rs. 81 as interest at 4.5% per annum of simple interest?</p>
+			<div class="options">
+				<label><input type="radio" name="q2" value="a"> &lt;3.5 years&gt;</label><br>
+				<label><input type="radio" name="q2" value="b"> &lt;4 years&gt;</label><br>
+				<label><input type="radio" name="q2" value="c"> &lt;4.5 years&gt;</label><br>
+				<label><input type="radio" name="q2" value="d"> 5 years</label>
+			</div>
+		</div>
+        <div class="question">
+			<p>Look at this series: 7, 10, 8, 11, 9, 12, ... What number should come next?</p>
+			<div class="options">
+				<label><input type="radio" name="q2" value="a"> &lt;7&gt;</label><br>
+				<label><input type="radio" name="q2" value="b"> &lt;10&gt;</label><br>
+				<label><input type="radio" name="q2" value="c"> &lt;12&gt;</label><br>
+				<label><input type="radio" name="q2" value="d"> 13</label>
+			</div>
+		</div>
+        <div class="question">
+			<p>
+                The small child does whatever his father was done.</p>
+			<div class="options">
+				<label><input type="radio" name="q2" value="a"> &lt;has done&gt;</label><br>
+				<label><input type="radio" name="q2" value="b"> &lt;did&gt;</label><br>
+				<label><input type="radio" name="q2" value="c"> &lt;does&gt;</label><br>
+				<label><input type="radio" name="q2" value="d">had done</label>
+			</div>
+		</div>
+        <div class="question">
+			<p>Which of the following computer language is used for artificial intelligence?</p>
+			<div class="options">
+				<label><input type="radio" name="q2" value="a"> &lt;FORTRAN&gt;</label><br>
+				<label><input type="radio" name="q2" value="b"> &lt;PROLOG&gt;</label><br>
+				<label><input type="radio" name="q2" value="c"> &lt;C&gt;</label><br>
+				<label><input type="radio" name="q2" value="d"> COBOL</label>
+			</div>
+		</div>
+        <div class="question">
+			<p>In SQL, which command is used to make permanent changes made by statements issue since the beginning of a transaction?</p>
+			<div class="options">
+				<label><input type="radio" name="q2" value="a"> &lt;ZIP&gt;</label><br>
+				<label><input type="radio" name="q2" value="b"> &lt;PACK&gt;</label><br>
+				<label><input type="radio" name="q2" value="c"> &lt;COMMIT&gt;</label><br>
+				<label><input type="radio" name="q2" value="d"> SAVE</label>
+			</div>
+		</div>
+		
+		<a href="learn.html" style="text-decoration:none"><button type="submit">Submit Quiz</button></a>
+	</form>
+</body>
+</html>
+{% endblock body %}
