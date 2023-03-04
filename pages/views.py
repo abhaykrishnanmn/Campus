@@ -15,15 +15,7 @@ from bs4 import BeautifulSoup
 import requests
 import urllib.request
 
-
-
-
-
-
-
-
 # Create your views here.
-
 
 def home(request):
     return render(request, 'pages/home.html')
