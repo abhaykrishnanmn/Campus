@@ -136,6 +136,7 @@ def offc(request):
     except:
         with open(f'templates\pages\offc.html','w') as f :
             f.write(f"<h1>Check your internet connectivity</h1>\n")
+        f.close()
     return render(request,'pages/offc.html')
 
 def test(request):
